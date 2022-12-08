@@ -22,7 +22,7 @@
 	#Misc */
 
 
-/* #Reset & Basics (Inspi  #ff9602 by E. Meyers)
+/* #Reset & Basics (Inspired by E. Meyers)
 ================================================== */
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, select{
 		margin: 0;
@@ -50,43 +50,27 @@
 /* #Basic Styles
 ================================================== */
 body {
-	background:radial-gradient(rgb(4, 4, 141),rgb(2, 2, 95), rgb(4, 4, 59));
-	font-family: 'Ardeco';
+	background: #fff;
+	font-family: 'Inconsolata';
 	font-weight:400;
-	font-size: 18px;
+	font-size: 15px;
 	line-height:23px;
 	letter-spacing:1px;
-	color:wheat;
+	color:#747474;
 	overflow-x:hidden;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
  }
-
-@font-face {
-	font-family: 'Ardeco';
-	src: url('Ardeco.eot');
-	src: local('Ardeco'),
-		url('../css/font/Ardeco.eot?#iefix') format('embedded-opentype'),
-		url('../css/font/Ardeco.woff') format('woff'),
-		url('../css/font/Ardeco.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-	h1, h2, h3 {
-		color:   #ff9602;
-		font-family: 'Pelagy';
-		font-size: 275%;-webkit-text-stroke:1px orange;
-color:rgba(0, 0, 0, 0); text-shadow: 2px 2px 5px rgb(212, 138, 1);
-	}
-	 h4, h5, h6 {
-		color:rgb(253, 252, 250);
-	font-family: 'Ardeco';
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {
+		color: #414141;
+		font-family: 'GarnataRegular';
 		text-align:center;
 	}
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 50px; line-height:50px;text-transform:uppercase; }
-	h2 { font-size: vvw; line-height:42px;text-transform:uppercase;}
+	h2 { font-size: 42px; line-height:42px;text-transform:uppercase;}
 	h3 { font-size: 38px; line-height: 38px;text-transform:uppercase;}
 	h4 { font-size: 34px; line-height: 34px;text-transform:uppercase;}
 	h5 { font-size: 28px; line-height: 28px;text-transform:uppercase;}
@@ -101,6 +85,7 @@ color:rgba(0, 0, 0, 0); text-shadow: 2px 2px 5px rgb(212, 138, 1);
 	strong { font-weight: 600;}
 	small { font-size: 80%; }
 	
+
 
 /*	Blockquotes  */
 	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; }
@@ -205,7 +190,14 @@ color:rgba(0, 0, 0, 0); text-shadow: 2px 2px 5px rgb(212, 138, 1);
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
 
-
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
 ::selection {
 	color: #fff;
 	}
