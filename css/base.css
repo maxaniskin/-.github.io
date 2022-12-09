@@ -76,7 +76,7 @@ background-color:darkblue;
 	h1, h2 {
 		color:   #ff9602;
 		font-family: 'Pelagy';
-		font-size: 275%;-webkit-text-stroke:1px orange;
+		font-size: 245%;-webkit-text-stroke:1px orange;
 color:rgba(0, 0, 0, 0); ;
 	}
 	 h4, h5, h6 {
@@ -192,11 +192,11 @@ color:rgba(0, 0, 0, 0); ;
     padding: 0;
 	}
 
-.top_img img{width: 100%;}
+.top_img {background-size:cover; background-position:center;  height: 32vw;}
 .top__title{font-size: 7vw;width: 100%;    color:darkblue;padding: 1vw 0 3vw 0;text-align: center;}
 
 @media only screen and (max-width: 1050px) {
-  .top_img{height: auto; }.top_block{background-size:contain;}
+  .top_img{height:96vw;}
 }@media only screen and (min-width: 1050px) {
   body::before {
     /* never visible - this is used in jQuery to check the current MQ */
